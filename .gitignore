@@ -1,0 +1,42 @@
+# Local secrets / credentials
+.env
+youtube-cookies.txt
+*.cookies.txt
+
+# Runtime database
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# Python
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Runtime state
+data/settings.json
+data/manifests/*.spotdl
+!data/manifests/.gitkeep
+playlists/*.m3u8
+!playlists/.gitkeep
+spotdl-errors-*.txt
+pending*.spotdl
+
+# Audio / generated files
+downloads/.incoming/
+downloads/library/*
+!downloads/library/.gitkeep
+exports/apple-music/*
+!exports/apple-music/.gitkeep
+
+# Build / release output
+dist/
+*.zip
